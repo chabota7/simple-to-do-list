@@ -1,0 +1,30 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #009578;
+    border-bottom: 5px solid #009578;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.todo__value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight:bolder;
+    flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked) .todo__value {
+    color:rgb(121, 125, 134);
+    background: #eeeeee;
+    text-decoration: line-through;
+    order: 1;
+}

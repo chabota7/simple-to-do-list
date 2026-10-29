@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHABOTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <button type="button" id="menuToggle"></button>
+        <div class="logo"> <span>Chabota-notes</span></div>
+        
+        <div class="search-bar"><input type="text" id="searchInput" placeholder="Search"></div>
+
+        <div class="header-icons">
+        <button title="settings"><i class="fa-solid fa-gear"></i></button>
+        <button title="Apps"><a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a></button>
+        <button title="Personal-Information"><i class="fa-solid fa-circle-info"></i></button>
+        <button title="feedback"><i class="fa-solid fa-comment"></i></button>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul class="sidebar-menu">
+            <li data-view="notes" class="active"><span><i class="fa-solid fa-note-sticky"></i> notes</span></li>
+            <li data-view="reminders"><span><i class="fa-solid fa-bell"></i> remainders</span></li>
+            <li data-view="trash"><span><i class="fa-solid fa-trash"></i> trash</span></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="note-input" >
+            <input type="text" id="noteInput" placeholder="Type your note man...">
+        </div>
+        <div class="note-input-icons">
+            <button title="checklist"><i class="fa-solid fa-square-check"></i></button>
+            <button title="add-image"><i class="fa-solid fa-image"></i></button>
+        </div>
+   
+
+    <h4>Pinned</h4>
+    <div class="notes-grid" id="pinnedNotes">
+        <!--<div class="note-card">
+            <h3>Work or Internship</h3>
+            <p>ZAMTEL<br>•KCM<br>•GOOGLE</p>
+            <button class="delete-btn" title="Delete">🚮</button>
+        </div>
+         <h3>Personal Projects</h3>
+            <ul>
+                <li>Match-corner Duplicate</li>
+                <li>Car Dealership website</li>
+                <li>To-Do-List</li>
+            </ul>
+
+        
+            <div class="note-card"></div>
+            <h3>Some other notes</h3>
+            <h5>becoming Andrej Kaparthy</h5>
+            <p>Andrej Karpathy is a Slovak-Canadian computer scientist known for his pioneering work in artificial intelligence, deep learning, and autonomous driving.</p>
+        </div>-->
+        </div>
+        <h4>Others</h4>
+        <div class="notes-grid" id="otherNotes">
+        </div>
+     </main>
+<footer>
+    <p>Built and designed by Chabota Mweetwa</p>
+    <p>All rights reserved&copy; - 2026, </p>
+</footer>
+<script src="script.js"></script>    
+</body>
+</html>
